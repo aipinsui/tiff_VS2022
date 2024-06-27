@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F2CEA6D0-C6D4-3791-890C-FB9996CC04E7}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\tiff_VS2022\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/tiff_VS2022/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\CMake\bin\cmake.exe -SE:/tiff_VS2022 -BE:/tiff_VS2022/build_vs2022 --check-stamp-file E:/tiff_VS2022/build_vs2022/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.29\Modules\CheckCCompilerFlag.cmake;D:\CMake\share\cmake-3.29\Modules\CheckCSourceCompiles.cmake;D:\CMake\share\cmake-3.29\Modules\CheckIncludeFile.cmake;D:\CMake\share\cmake-3.29\Modules\CheckIncludeFileCXX.cmake;D:\CMake\share\cmake-3.29\Modules\CheckLibraryExists.cmake;D:\CMake\share\cmake-3.29\Modules\CheckSymbolExists.cmake;D:\CMake\share\cmake-3.29\Modules\CheckTypeSize.cmake;D:\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.29\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.29\Modules\FindZLIB.cmake;D:\CMake\share\cmake-3.29\Modules\GNUInstallDirs.cmake;D:\CMake\share\cmake-3.29\Modules\Internal\CheckCompilerFlag.cmake;D:\CMake\share\cmake-3.29\Modules\Internal\CheckFlagCommonConfig.cmake;D:\CMake\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;D:\CMake\share\cmake-3.29\Modules\SelectLibraryConfigurations.cmake;D:\CMake\share\cmake-3.29\Modules\TestBigEndian.cmake;E:\tiff_VS2022\build_vs2022\CMakeFiles\3.29.6\CMakeCCompiler.cmake;E:\tiff_VS2022\build_vs2022\CMakeFiles\3.29.6\CMakeCXXCompiler.cmake;E:\tiff_VS2022\build_vs2022\CMakeFiles\3.29.6\CMakeRCCompiler.cmake;E:\tiff_VS2022\build_vs2022\CMakeFiles\3.29.6\CMakeSystem.cmake;E:\tiff_VS2022\cmake\AutotoolsCompat.cmake;E:\tiff_VS2022\cmake\AutotoolsVersion.cmake;E:\tiff_VS2022\cmake\CXXLibrary.cmake;E:\tiff_VS2022\cmake\CompilerChecks.cmake;E:\tiff_VS2022\cmake\DeflateCodec.cmake;E:\tiff_VS2022\cmake\FindCMath.cmake;E:\tiff_VS2022\cmake\FindDeflate.cmake;E:\tiff_VS2022\cmake\FindJBIG.cmake;E:\tiff_VS2022\cmake\FindJPEG.cmake;E:\tiff_VS2022\cmake\FindLERC.cmake;E:\tiff_VS2022\cmake\FindWebP.cmake;E:\tiff_VS2022\cmake\FindZSTD.cmake;E:\tiff_VS2022\cmake\Findliblzma.cmake;E:\tiff_VS2022\cmake\IncludeChecks.cmake;E:\tiff_VS2022\cmake\InternalCodecs.cmake;E:\tiff_VS2022\cmake\JBIGCodec.cmake;E:\tiff_VS2022\cmake\JPEGCodec.cmake;E:\tiff_VS2022\cmake\LERCCodec.cmake;E:\tiff_VS2022\cmake\LZMACodec.cmake;E:\tiff_VS2022\cmake\LargeFileSupport.cmake;E:\tiff_VS2022\cmake\LibraryFeatures.cmake;E:\tiff_VS2022\cmake\LinkerChecks.cmake;E:\tiff_VS2022\cmake\PixarLogCodec.cmake;E:\tiff_VS2022\cmake\PkgConfig.cmake;E:\tiff_VS2022\cmake\ProcessorChecks.cmake;E:\tiff_VS2022\cmake\Release.cmake;E:\tiff_VS2022\cmake\SymbolChecks.cmake;E:\tiff_VS2022\cmake\TypeSizeChecks.cmake;E:\tiff_VS2022\cmake\WebPCodec.cmake;E:\tiff_VS2022\cmake\WindowsSupport.cmake;E:\tiff_VS2022\cmake\ZSTDCodec.cmake;E:\tiff_VS2022\configure.ac;E:\tiff_VS2022\libtiff-4.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\tiff_VS2022\build_vs2022\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/tiff_VS2022/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\CMake\bin\cmake.exe -SE:/tiff_VS2022 -BE:/tiff_VS2022/build_vs2022 --check-stamp-file E:/tiff_VS2022/build_vs2022/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.29\Modules\CheckCCompilerFlag.cmake;D:\CMake\share\cmake-3.29\Modules\CheckCSourceCompiles.cmake;D:\CMake\share\cmake-3.29\Modules\CheckIncludeFile.cmake;D:\CMake\share\cmake-3.29\Modules\CheckIncludeFileCXX.cmake;D:\CMake\share\cmake-3.29\Modules\CheckLibraryExists.cmake;D:\CMake\share\cmake-3.29\Modules\CheckSymbolExists.cmake;D:\CMake\share\cmake-3.29\Modules\CheckTypeSize.cmake;D:\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.29\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.29\Modules\FindZLIB.cmake;D:\CMake\share\cmake-3.29\Modules\GNUInstallDirs.cmake;D:\CMake\share\cmake-3.29\Modules\Internal\CheckCompilerFlag.cmake;D:\CMake\share\cmake-3.29\Modules\Internal\CheckFlagCommonConfig.cmake;D:\CMake\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;D:\CMake\share\cmake-3.29\Modules\SelectLibraryConfigurations.cmake;D:\CMake\share\cmake-3.29\Modules\TestBigEndian.cmake;E:\tiff_VS2022\build_vs2022\CMakeFiles\3.29.6\CMakeCCompiler.cmake;E:\tiff_VS2022\build_vs2022\CMakeFiles\3.29.6\CMakeCXXCompiler.cmake;E:\tiff_VS2022\build_vs2022\CMakeFiles\3.29.6\CMakeRCCompiler.cmake;E:\tiff_VS2022\build_vs2022\CMakeFiles\3.29.6\CMakeSystem.cmake;E:\tiff_VS2022\cmake\AutotoolsCompat.cmake;E:\tiff_VS2022\cmake\AutotoolsVersion.cmake;E:\tiff_VS2022\cmake\CXXLibrary.cmake;E:\tiff_VS2022\cmake\CompilerChecks.cmake;E:\tiff_VS2022\cmake\DeflateCodec.cmake;E:\tiff_VS2022\cmake\FindCMath.cmake;E:\tiff_VS2022\cmake\FindDeflate.cmake;E:\tiff_VS2022\cmake\FindJBIG.cmake;E:\tiff_VS2022\cmake\FindJPEG.cmake;E:\tiff_VS2022\cmake\FindLERC.cmake;E:\tiff_VS2022\cmake\FindWebP.cmake;E:\tiff_VS2022\cmake\FindZSTD.cmake;E:\tiff_VS2022\cmake\Findliblzma.cmake;E:\tiff_VS2022\cmake\IncludeChecks.cmake;E:\tiff_VS2022\cmake\InternalCodecs.cmake;E:\tiff_VS2022\cmake\JBIGCodec.cmake;E:\tiff_VS2022\cmake\JPEGCodec.cmake;E:\tiff_VS2022\cmake\LERCCodec.cmake;E:\tiff_VS2022\cmake\LZMACodec.cmake;E:\tiff_VS2022\cmake\LargeFileSupport.cmake;E:\tiff_VS2022\cmake\LibraryFeatures.cmake;E:\tiff_VS2022\cmake\LinkerChecks.cmake;E:\tiff_VS2022\cmake\PixarLogCodec.cmake;E:\tiff_VS2022\cmake\PkgConfig.cmake;E:\tiff_VS2022\cmake\ProcessorChecks.cmake;E:\tiff_VS2022\cmake\Release.cmake;E:\tiff_VS2022\cmake\SymbolChecks.cmake;E:\tiff_VS2022\cmake\TypeSizeChecks.cmake;E:\tiff_VS2022\cmake\WebPCodec.cmake;E:\tiff_VS2022\cmake\WindowsSupport.cmake;E:\tiff_VS2022\cmake\ZSTDCodec.cmake;E:\tiff_VS2022\configure.ac;E:\tiff_VS2022\libtiff-4.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\tiff_VS2022\build_vs2022\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/tiff_VS2022/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\CMake\bin\cmake.exe -SE:/tiff_VS2022 -BE:/tiff_VS2022/build_vs2022 --check-stamp-file E:/tiff_VS2022/build_vs2022/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.29\Modules\CheckCCompilerFlag.cmake;D:\CMake\share\cmake-3.29\Modules\CheckCSourceCompiles.cmake;D:\CMake\share\cmake-3.29\Modules\CheckIncludeFile.cmake;D:\CMake\share\cmake-3.29\Modules\CheckIncludeFileCXX.cmake;D:\CMake\share\cmake-3.29\Modules\CheckLibraryExists.cmake;D:\CMake\share\cmake-3.29\Modules\CheckSymbolExists.cmake;D:\CMake\share\cmake-3.29\Modules\CheckTypeSize.cmake;D:\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.29\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.29\Modules\FindZLIB.cmake;D:\CMake\share\cmake-3.29\Modules\GNUInstallDirs.cmake;D:\CMake\share\cmake-3.29\Modules\Internal\CheckCompilerFlag.cmake;D:\CMake\share\cmake-3.29\Modules\Internal\CheckFlagCommonConfig.cmake;D:\CMake\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;D:\CMake\share\cmake-3.29\Modules\SelectLibraryConfigurations.cmake;D:\CMake\share\cmake-3.29\Modules\TestBigEndian.cmake;E:\tiff_VS2022\build_vs2022\CMakeFiles\3.29.6\CMakeCCompiler.cmake;E:\tiff_VS2022\build_vs2022\CMakeFiles\3.29.6\CMakeCXXCompiler.cmake;E:\tiff_VS2022\build_vs2022\CMakeFiles\3.29.6\CMakeRCCompiler.cmake;E:\tiff_VS2022\build_vs2022\CMakeFiles\3.29.6\CMakeSystem.cmake;E:\tiff_VS2022\cmake\AutotoolsCompat.cmake;E:\tiff_VS2022\cmake\AutotoolsVersion.cmake;E:\tiff_VS2022\cmake\CXXLibrary.cmake;E:\tiff_VS2022\cmake\CompilerChecks.cmake;E:\tiff_VS2022\cmake\DeflateCodec.cmake;E:\tiff_VS2022\cmake\FindCMath.cmake;E:\tiff_VS2022\cmake\FindDeflate.cmake;E:\tiff_VS2022\cmake\FindJBIG.cmake;E:\tiff_VS2022\cmake\FindJPEG.cmake;E:\tiff_VS2022\cmake\FindLERC.cmake;E:\tiff_VS2022\cmake\FindWebP.cmake;E:\tiff_VS2022\cmake\FindZSTD.cmake;E:\tiff_VS2022\cmake\Findliblzma.cmake;E:\tiff_VS2022\cmake\IncludeChecks.cmake;E:\tiff_VS2022\cmake\InternalCodecs.cmake;E:\tiff_VS2022\cmake\JBIGCodec.cmake;E:\tiff_VS2022\cmake\JPEGCodec.cmake;E:\tiff_VS2022\cmake\LERCCodec.cmake;E:\tiff_VS2022\cmake\LZMACodec.cmake;E:\tiff_VS2022\cmake\LargeFileSupport.cmake;E:\tiff_VS2022\cmake\LibraryFeatures.cmake;E:\tiff_VS2022\cmake\LinkerChecks.cmake;E:\tiff_VS2022\cmake\PixarLogCodec.cmake;E:\tiff_VS2022\cmake\PkgConfig.cmake;E:\tiff_VS2022\cmake\ProcessorChecks.cmake;E:\tiff_VS2022\cmake\Release.cmake;E:\tiff_VS2022\cmake\SymbolChecks.cmake;E:\tiff_VS2022\cmake\TypeSizeChecks.cmake;E:\tiff_VS2022\cmake\WebPCodec.cmake;E:\tiff_VS2022\cmake\WindowsSupport.cmake;E:\tiff_VS2022\cmake\ZSTDCodec.cmake;E:\tiff_VS2022\configure.ac;E:\tiff_VS2022\libtiff-4.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\tiff_VS2022\build_vs2022\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/tiff_VS2022/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\CMake\bin\cmake.exe -SE:/tiff_VS2022 -BE:/tiff_VS2022/build_vs2022 --check-stamp-file E:/tiff_VS2022/build_vs2022/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.29\Modules\CheckCCompilerFlag.cmake;D:\CMake\share\cmake-3.29\Modules\CheckCSourceCompiles.cmake;D:\CMake\share\cmake-3.29\Modules\CheckIncludeFile.cmake;D:\CMake\share\cmake-3.29\Modules\CheckIncludeFileCXX.cmake;D:\CMake\share\cmake-3.29\Modules\CheckLibraryExists.cmake;D:\CMake\share\cmake-3.29\Modules\CheckSymbolExists.cmake;D:\CMake\share\cmake-3.29\Modules\CheckTypeSize.cmake;D:\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.29\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.29\Modules\FindZLIB.cmake;D:\CMake\share\cmake-3.29\Modules\GNUInstallDirs.cmake;D:\CMake\share\cmake-3.29\Modules\Internal\CheckCompilerFlag.cmake;D:\CMake\share\cmake-3.29\Modules\Internal\CheckFlagCommonConfig.cmake;D:\CMake\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;D:\CMake\share\cmake-3.29\Modules\SelectLibraryConfigurations.cmake;D:\CMake\share\cmake-3.29\Modules\TestBigEndian.cmake;E:\tiff_VS2022\build_vs2022\CMakeFiles\3.29.6\CMakeCCompiler.cmake;E:\tiff_VS2022\build_vs2022\CMakeFiles\3.29.6\CMakeCXXCompiler.cmake;E:\tiff_VS2022\build_vs2022\CMakeFiles\3.29.6\CMakeRCCompiler.cmake;E:\tiff_VS2022\build_vs2022\CMakeFiles\3.29.6\CMakeSystem.cmake;E:\tiff_VS2022\cmake\AutotoolsCompat.cmake;E:\tiff_VS2022\cmake\AutotoolsVersion.cmake;E:\tiff_VS2022\cmake\CXXLibrary.cmake;E:\tiff_VS2022\cmake\CompilerChecks.cmake;E:\tiff_VS2022\cmake\DeflateCodec.cmake;E:\tiff_VS2022\cmake\FindCMath.cmake;E:\tiff_VS2022\cmake\FindDeflate.cmake;E:\tiff_VS2022\cmake\FindJBIG.cmake;E:\tiff_VS2022\cmake\FindJPEG.cmake;E:\tiff_VS2022\cmake\FindLERC.cmake;E:\tiff_VS2022\cmake\FindWebP.cmake;E:\tiff_VS2022\cmake\FindZSTD.cmake;E:\tiff_VS2022\cmake\Findliblzma.cmake;E:\tiff_VS2022\cmake\IncludeChecks.cmake;E:\tiff_VS2022\cmake\InternalCodecs.cmake;E:\tiff_VS2022\cmake\JBIGCodec.cmake;E:\tiff_VS2022\cmake\JPEGCodec.cmake;E:\tiff_VS2022\cmake\LERCCodec.cmake;E:\tiff_VS2022\cmake\LZMACodec.cmake;E:\tiff_VS2022\cmake\LargeFileSupport.cmake;E:\tiff_VS2022\cmake\LibraryFeatures.cmake;E:\tiff_VS2022\cmake\LinkerChecks.cmake;E:\tiff_VS2022\cmake\PixarLogCodec.cmake;E:\tiff_VS2022\cmake\PkgConfig.cmake;E:\tiff_VS2022\cmake\ProcessorChecks.cmake;E:\tiff_VS2022\cmake\Release.cmake;E:\tiff_VS2022\cmake\SymbolChecks.cmake;E:\tiff_VS2022\cmake\TypeSizeChecks.cmake;E:\tiff_VS2022\cmake\WebPCodec.cmake;E:\tiff_VS2022\cmake\WindowsSupport.cmake;E:\tiff_VS2022\cmake\ZSTDCodec.cmake;E:\tiff_VS2022\configure.ac;E:\tiff_VS2022\libtiff-4.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\tiff_VS2022\build_vs2022\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\tiff_VS2022\build_vs2022\ZERO_CHECK.vcxproj">
+      <Project>{438E3118-FBD1-336A-A81A-3F5FBD729CED}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\tiff_VS2022\build_vs2022\contrib\addtiffo\addtiffo.vcxproj">
+      <Project>{CD10B186-E53B-3E50-9D1C-2D99687A7D02}</Project>
+      <Name>addtiffo</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\tiff_VS2022\build_vs2022\test\ascii_tag.vcxproj">
+      <Project>{172D4CDF-C045-3FAE-B6D4-552F9FA6A7D6}</Project>
+      <Name>ascii_tag</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\tiff_VS2022\build_vs2022\test\custom_dir.vcxproj">
+      <Project>{C8633EC5-5A85-3C84-B1C8-0E9946755C47}</Project>
+      <Name>custom_dir</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\tiff_VS2022\build_vs2022\test\custom_dir_EXIF_231.vcxproj">
+      <Project>{9A2355BA-CAA9-3D02-A340-F2532FC09C8B}</Project>
+      <Name>custom_dir_EXIF_231</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\tiff_VS2022\build_vs2022\test\defer_strile_loading.vcxproj">
+      <Project>{A3BFFA4F-4DD4-3A13-9311-33F149E6355E}</Project>
+      <Name>defer_strile_loading</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\tiff_VS2022\build_vs2022\test\defer_strile_writing.vcxproj">
+      <Project>{45B80245-C0C1-3173-9F73-9E6210232E6C}</Project>
+      <Name>defer_strile_writing</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\tiff_VS2022\build_vs2022\contrib\iptcutil\iptcutil.vcxproj">
+      <Project>{BEC0C1C0-EE94-3F89-874E-D80D00460B73}</Project>
+      <Name>iptcutil</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\tiff_VS2022\build_vs2022\test\long_tag.vcxproj">
+      <Project>{D708EABE-80EA-361F-A52E-A810E2C60877}</Project>
+      <Name>long_tag</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\tiff_VS2022\build_vs2022\test\rewrite.vcxproj">
+      <Project>{809DDED0-E465-3ABC-9C1A-BE5EFBE70A16}</Project>
+      <Name>rewrite</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\tiff_VS2022\build_vs2022\test\short_tag.vcxproj">
+      <Project>{B8D37967-475E-3502-8BC7-27EE67362727}</Project>
+      <Name>short_tag</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\tiff_VS2022\build_vs2022\test\strip_rw.vcxproj">
+      <Project>{2397513F-253E-35CD-9778-300CF6FE4BF0}</Project>
+      <Name>strip_rw</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\tiff_VS2022\build_vs2022\test\test_append_to_strip.vcxproj">
+      <Project>{A22DA8E7-D835-3FE6-8B06-DF30FD07AF30}</Project>
+      <Name>test_append_to_strip</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\tiff_VS2022\build_vs2022\test\test_directory.vcxproj">
+      <Project>{740659D5-3BC5-3CD4-ADC1-DD0B6F2CE99D}</Project>
+      <Name>test_directory</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\tiff_VS2022\build_vs2022\test\test_ifd_loop_detection.vcxproj">
+      <Project>{F6062649-8129-3883-BC2E-59E7D2A90BE8}</Project>
+      <Name>test_ifd_loop_detection</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\tiff_VS2022\build_vs2022\test\test_open_options.vcxproj">
+      <Project>{E7993BB6-AEDE-3B54-862A-C2E5AA042E16}</Project>
+      <Name>test_open_options</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\tiff_VS2022\build_vs2022\test\test_signed_tags.vcxproj">
+      <Project>{EA50B499-4062-31E3-874E-6776AB741D2C}</Project>
+      <Name>test_signed_tags</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\tiff_VS2022\build_vs2022\test\testtypes.vcxproj">
+      <Project>{FF2A14B2-9E1D-33B1-A2C0-D83F75B83AE6}</Project>
+      <Name>testtypes</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\tiff_VS2022\build_vs2022\libtiff\tiff.vcxproj">
+      <Project>{6CC700E1-F7A3-3E50-913A-FE806A76DACB}</Project>
+      <Name>tiff</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\tiff_VS2022\build_vs2022\contrib\dbs\tiff-bi.vcxproj">
+      <Project>{CB5354DC-25AD-330B-931F-55A03F0450E9}</Project>
+      <Name>tiff-bi</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\tiff_VS2022\build_vs2022\contrib\dbs\tiff-grayscale.vcxproj">
+      <Project>{E0556E0A-8581-32A9-B2BD-9CE78A64A483}</Project>
+      <Name>tiff-grayscale</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\tiff_VS2022\build_vs2022\contrib\dbs\tiff-palette.vcxproj">
+      <Project>{937F54B6-E694-37BF-98CF-EBE9B44C5426}</Project>
+      <Name>tiff-palette</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\tiff_VS2022\build_vs2022\contrib\dbs\tiff-rgb.vcxproj">
+      <Project>{D7462CFA-A173-3AFF-8C31-2D43C905E3AF}</Project>
+      <Name>tiff-rgb</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\tiff_VS2022\build_vs2022\libtiff\tiff_mkg3states.vcxproj">
+      <Project>{416978DD-5749-3FDD-B770-E14C766C4C03}</Project>
+      <Name>tiff_mkg3states</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\tiff_VS2022\build_vs2022\port\tiff_port.vcxproj">
+      <Project>{E97DF51E-6768-3C26-B5F1-B4AF3BD02A03}</Project>
+      <Name>tiff_port</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\tiff_VS2022\build_vs2022\tools\tiffcp.vcxproj">
+      <Project>{DAE8E64F-EE99-34C2-8085-9F83537A85F0}</Project>
+      <Name>tiffcp</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\tiff_VS2022\build_vs2022\tools\tiffdump.vcxproj">
+      <Project>{09D7DB18-0306-3862-9EA4-D8B02EB4873C}</Project>
+      <Name>tiffdump</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\tiff_VS2022\build_vs2022\tools\tiffinfo.vcxproj">
+      <Project>{0DC3CE77-A77C-3A93-8699-8815A0F5B97F}</Project>
+      <Name>tiffinfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\tiff_VS2022\build_vs2022\tools\tiffset.vcxproj">
+      <Project>{430AD7A8-0D6B-3C78-86EF-D1CC9E3FA79A}</Project>
+      <Name>tiffset</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\tiff_VS2022\build_vs2022\tools\tiffsplit.vcxproj">
+      <Project>{BB65AA74-2CE2-3A17-AA3A-1B3941D3EA46}</Project>
+      <Name>tiffsplit</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\tiff_VS2022\build_vs2022\libtiff\tiffxx.vcxproj">
+      <Project>{1BF019A8-3159-3BE6-B5D4-2BC27F181E79}</Project>
+      <Name>tiffxx</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
